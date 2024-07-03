@@ -1,0 +1,16 @@
+{
+  "produtos": [
+    {
+      "id": "373a",
+      "nome": "filtro de linha com dps",
+      "valor": "55.9",
+      "imagem": "https://images.tcdn.com.br/img/img_prod/1078000/dps_filtro_de_linha_iclamper_energia_5_preto_106213_1_77308c7237b0206650207f8458479359.png"
+    },
+    {
+      "id": "b248",
+      "nome": "Fone Gamer Headset Knup",
+      "valor": "89.90",
+      "imagem": "https://cdn.sistemawbuy.com.br/arquivos/b7cfcf4b6f8ad29d99ba7f1434a89c9b/produtos/64308e7a54a24/fone-de-ouvido-gamer-kp-491-azul-643c66a632bc0.png"
+    }
+  ]
+}
