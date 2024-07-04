@@ -44,7 +44,6 @@ const mostrarProdutos = async () => {
             card.appendChild(nomeProduto);
             card.appendChild(valorLixeira);
             meusProdutos.appendChild(card);
-console.log(typeof(produto.id));
             // Adiciona o evento de clique na lixeira
             iconeLixeira.addEventListener('click',() => deletarProdutor(produto.id));
         });
