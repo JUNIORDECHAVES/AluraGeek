@@ -1,7 +1,7 @@
 import deletarProdutor from "./deletarProduto.js";
 const mostrarProdutos = async () => {
     try {
-        const response = await fetch('http://localhost:3000/produtos');
+        const response = await fetch('https://api-produtos-alurageek-tuy2.vercel.app/produtos');
         const produtosData = await response.json();
 
         const meusProdutos = document.querySelector('.meus_produtos');

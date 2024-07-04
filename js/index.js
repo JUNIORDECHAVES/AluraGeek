@@ -28,7 +28,7 @@ async function guardarProduto() {
     };
 
     try {
-        const response = await fetch('http://localhost:3000/produtos', post);
+        const response = await fetch('https://api-produtos-alurageek-tuy2.vercel.app/produtos', post);
         const responseData = await response.json();
 
         return responseData;

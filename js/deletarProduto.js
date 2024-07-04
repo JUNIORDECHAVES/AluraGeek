@@ -1,5 +1,5 @@
 const deletarProdutor = async (idProduto) => {
-    const url = `http://localhost:3000/produtos/${idProduto}`;
+    const url = `https://api-produtos-alurageek-tuy2.vercel.app/produtos/${idProduto}`;
     const deleta = {
         method: 'DELETE',
         headers: {
