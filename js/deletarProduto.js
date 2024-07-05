@@ -1,3 +1,4 @@
+import atualizarPagina from "./index.js";
 const deletarProdutor = async (idProduto) => {
     const url = `https://api-produtos-alurageek-tuy2.vercel.app/produtos/${idProduto}`;
     const deleta = {
@@ -20,7 +21,7 @@ const deletarProdutor = async (idProduto) => {
         console.error('Erro na requisição:', error);
         console.log(`ocorreu um erro no ${error}`)
     }
-
+    atualizarPagina()
 }
 
 

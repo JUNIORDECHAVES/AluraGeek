@@ -1,4 +1,4 @@
-import  mostrarProdutos  from "./mostraproduto.js";
+import mostrarProdutos from "./mostraproduto.js";
 const produto = document.querySelector('#nome_produto');
 const valor = document.querySelector('#valor');
 const imagem = document.querySelector('#imagem');
@@ -12,6 +12,12 @@ mostrarProdutos();
 
 
 async function guardarProduto() {
+
+    if (produto.value === '' || valor.value === '' || imagem.value === '') {
+        alert('Todos os campos são obrigatórios!');
+        return;
+    }
+
 
     const produtoNovo = {
         nome: produto.value,
@@ -31,10 +37,10 @@ async function guardarProduto() {
         const response = await fetch('https://api-produtos-alurageek-tuy2.vercel.app/produtos', post);
         const responseData = await response.json();
 
-        return responseData;
     } catch (error) {
         console.error('Erro na requisição:', error);
     }
+    atualizarPagina()
 }
 
 
@@ -44,4 +50,8 @@ function limparDados() {
     document.querySelector('#imagem').value = '';
 }
 
+function atualizarPagina() {
+    window.location.reload(true);
+}
 
+export default atualizarPagina

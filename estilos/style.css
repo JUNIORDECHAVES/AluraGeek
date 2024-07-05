@@ -151,6 +151,14 @@ h2 {
     text-align: center;
 }
 
+#botao_guarda:hover {
+    opacity: 0.8;
+}
+
+#botao_limpar:hover {
+    opacity: 0.8;
+}
+
 #botao_guarda {
     background: rgba(3, 49, 140, 1);
     border: none;
